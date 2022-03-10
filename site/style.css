@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Pacifico&family=Ubuntu:wght@300;400;500;700&display=swap');
+body{
+    background-color: beige;
+}
+.row{
+    float:left;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    float:right;
+    margin:-.2em;
+    border:.1em solid black;
+    width:6em;
+    height:auto;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+}
+p{
+    float:right;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(243, 144, 13);
+    cursor: pointer;
+}
+a{
+    color: rgb(175, 105, 13);
+}
+@media (min-width: 992px) {
+     .col-lg-4,.col-lg-6,.col-lg-12{
+        border:.2em solid black;
+        margin: .3em .3em .3em 0.3em;
+        padding: .1em .3em ;
+        float:left;
+        box-sizing: border-box;
+        background-color: aqua;
+    } 
+    .col-lg-4 {
+      width: 33%;
+    }
+    .row{
+        display: flex;
+    }
+    
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-lg-4,.col-md-6,.col-md-12{
+        max-width: 100%;
+        border:.2em solid black;
+        margin: .3em .3em .3em 0;
+        padding: .1em .3em ;
+        float:left;
+        box-sizing: border-boxs;
+        background-color: aqua;
+    } 
+
+    .col-md-6 {
+      width: 49%;
+    }
+   
+    .col-md-12 {
+      width: 100%;
+    }
+
+  
+  }
+  @media (max-width: 767px ) {
+
+    .col-lg-4,.col-sm-6,.col-sm-12{
+        max-width: 100%;
+        border:.2em solid black;
+        margin: .3em .3em;
+        padding: .1em .3em ;
+        float:left;
+        background-color: aqua;
+    } 
+   
+    .col-md-12 {
+      width: 100%;
+    }
+    
+  }
+  
